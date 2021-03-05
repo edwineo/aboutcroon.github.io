@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1. Vue3 初步介绍 | Croon Liu</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.png">
+    <meta name="description" content="Replace the stars and rivers in the body with unlimited methods for the future">
+    
+    <link rel="preload" href="/assets/css/0.styles.d236ad96.css" as="style"><link rel="preload" href="/assets/js/app.356218c2.js" as="script"><link rel="preload" href="/assets/js/2.1547bbba.js" as="script"><link rel="preload" href="/assets/js/16.33dc3160.js" as="script"><link rel="prefetch" href="/assets/js/10.7d9019c4.js"><link rel="prefetch" href="/assets/js/11.2b41e043.js"><link rel="prefetch" href="/assets/js/12.23bc9545.js"><link rel="prefetch" href="/assets/js/13.e76e8c6a.js"><link rel="prefetch" href="/assets/js/14.d35f4302.js"><link rel="prefetch" href="/assets/js/15.a09c666d.js"><link rel="prefetch" href="/assets/js/17.521828eb.js"><link rel="prefetch" href="/assets/js/18.e694f17a.js"><link rel="prefetch" href="/assets/js/19.c1ec16da.js"><link rel="prefetch" href="/assets/js/20.fb6ee556.js"><link rel="prefetch" href="/assets/js/21.f4053037.js"><link rel="prefetch" href="/assets/js/22.fcbbeb53.js"><link rel="prefetch" href="/assets/js/23.d02ba915.js"><link rel="prefetch" href="/assets/js/24.765c0f60.js"><link rel="prefetch" href="/assets/js/25.b6397f75.js"><link rel="prefetch" href="/assets/js/26.a37c5cf0.js"><link rel="prefetch" href="/assets/js/3.557dccde.js"><link rel="prefetch" href="/assets/js/4.09ee8a39.js"><link rel="prefetch" href="/assets/js/5.30fca801.js"><link rel="prefetch" href="/assets/js/6.498ab014.js"><link rel="prefetch" href="/assets/js/7.2f300486.js"><link rel="prefetch" href="/assets/js/8.d34c362f.js"><link rel="prefetch" href="/assets/js/9.60270935.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d236ad96.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Croon Liu</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Blog" class="dropdown-title"><span class="title">Blog</span> <span class="arrow down"></span></button> <button type="button" aria-label="Blog" class="mobile-dropdown-title"><span class="title">Blog</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/HTTP/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/Vue3/" class="nav-link router-link-active">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/SSR/" class="nav-link">
+  SSR
+</a></li><li class="dropdown-item"><!----> <a href="/开发提效/" class="nav-link">
+  开发提效
+</a></li><li class="dropdown-item"><!----> <a href="/高级程序设计/" class="nav-link">
+  高级程序设计
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/aboutcroon" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Blog" class="dropdown-title"><span class="title">Blog</span> <span class="arrow down"></span></button> <button type="button" aria-label="Blog" class="mobile-dropdown-title"><span class="title">Blog</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/HTTP/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/Vue3/" class="nav-link router-link-active">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/SSR/" class="nav-link">
+  SSR
+</a></li><li class="dropdown-item"><!----> <a href="/开发提效/" class="nav-link">
+  开发提效
+</a></li><li class="dropdown-item"><!----> <a href="/高级程序设计/" class="nav-link">
+  高级程序设计
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/aboutcroon" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Vue3/introduce.html" aria-current="page" class="active sidebar-link">1. Vue3 初步介绍</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Vue3/introduce.html#_1-1-介绍" class="sidebar-link">1.1 介绍</a></li><li class="sidebar-sub-header"><a href="/Vue3/introduce.html#_1-2-优化点" class="sidebar-link">1.2 优化点</a></li><li class="sidebar-sub-header"><a href="/Vue3/introduce.html#_1-3-新特性" class="sidebar-link">1.3 新特性</a></li><li class="sidebar-sub-header"><a href="/Vue3/introduce.html#_2-1-复杂组件的代码变得难以维护" class="sidebar-link">2.1 复杂组件的代码变得难以维护</a></li><li class="sidebar-sub-header"><a href="/Vue3/introduce.html#_2-2-vue2-对-typescript-的支持非常有限" class="sidebar-link">2.2 Vue2 对 TypeScript 的支持非常有限</a></li></ul></li><li><a href="/Vue3/guide.html" class="sidebar-link">1. Vue3 基础</a></li><li><a href="/Vue3/migration.html" class="sidebar-link">1. v-for 中的 Ref 数组</a></li><li><a href="/Vue3/api.html" class="sidebar-link">1. 应用配置</a></li><li><a href="/Vue3/router.html" class="sidebar-link">1. 路由基础</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_1-vue3-初步介绍"><a href="#_1-vue3-初步介绍" class="header-anchor">#</a> 1. Vue3 初步介绍</h1> <h2 id="_1-1-介绍"><a href="#_1-1-介绍" class="header-anchor">#</a> 1.1 介绍</h2> <p>开发历经2年，99位贡献者，2600次提交，628次pull request。</p> <p>vue2 的大部分特性都完整的保留到了 vue3 中，可以像使用 vue2 一样原封不动的使用 vue3，这是它遵守的渐进式的准则。</p> <h2 id="_1-2-优化点"><a href="#_1-2-优化点" class="header-anchor">#</a> 1.2 优化点</h2> <p>vue3 的代码被重新编写成分成实现不同功能的 module</p> <p>代码打包大小减少了 41%</p> <p>初次渲染快了 55%，更新快了 133%</p> <p>内存的使用减少了 54%（得益于重写了虚拟 dom 的实现和 TreeShaking 的优化）</p> <h2 id="_1-3-新特性"><a href="#_1-3-新特性" class="header-anchor">#</a> 1.3 新特性</h2> <p>vue2 中遇到的问题：复杂组件的代码变得越来越难以维护，缺少一种比较干净的，在多个组件之间提取和复用逻辑的机制，现在的重用机制都有一些弊端。</p> <p>基于以上问题，vue3 中隆重推出了 <code>Composition API</code> ，这是学习 vue3 要着重学习的特性，Composition 意为组合，实际上是一系列 API 的合集。</p> <p>Composition API 中主要包括：</p> <ul><li>ref 和 reactive</li> <li>computed 和 watch</li> <li>新的生命周期函数</li> <li>自定义函数 - Hooks 函数（重要）</li></ul> <p>其他新增特性：</p> <ul><li>Teleport 内置组件 - 瞬移组件的位置</li> <li>Suspense - 异步加载组件的新福音</li> <li>全局 API 的修改和优化</li> <li>更多的试验性特性（例如在 script 中直接添加 setup() 即可使用 Composition API）</li> <li>更好的 TypeScript 支持（全部源代码都是 TypeScript 编写，提供非常完备的类型定义）</li></ul> <h1 id="_2-为什么要有-vue3"><a href="#_2-为什么要有-vue3" class="header-anchor">#</a> 2. 为什么要有 Vue3</h1> <p>Composition API 的出现是为了解决现有的问题。</p> <h2 id="_2-1-复杂组件的代码变得难以维护"><a href="#_2-1-复杂组件的代码变得难以维护" class="header-anchor">#</a> 2.1 复杂组件的代码变得难以维护</h2> <p>在 vue2 中，随着功能的增长，复杂组件的代码变得越来越难以维护，缺少一种比较干净的，在多个组件之间提取和复用逻辑的机制，现在的重用机制都有一些弊端，比如 mixin 等。mixin 虽可以提取公共部分代码，但缺点是会有命名冲突，不清楚暴露出来的变量的作用，重用到其他 component 时会出现很多问题。</p> <p>这是因为 vue2 通过 <code>选项方式</code> 来组织代码，但通常情况下，通过 <code>逻辑方式</code> 来组织代码会更有意义。</p> <p>例如，在 vue2 中，下列代码的与 filter 相关的逻辑都被分散到三个地方去了，与 pagination 有关的逻辑也被分散到三个地方去了。</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      filter<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      pagination<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">filterMethod</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">paginationMethod</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>随着复杂度的上升，会带来很多问题。如下图，每个颜色代表每种功能，当我们以逻辑方式分类时，会清晰很多，代码的维护也会变得更容易。</p> <img src="https://img-blog.csdnimg.cn/20200605155509976.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Zlc2ZzZWZncw==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:50%;"> <img src="https://img-blog.csdnimg.cn/20200605160439258.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Zlc2ZzZWZncw==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:50%;"> <p>Composition API 的出现即是解决上述问题，它以逻辑方式进行代码的编写。</p> <h2 id="_2-2-vue2-对-typescript-的支持非常有限"><a href="#_2-2-vue2-对-typescript-的支持非常有限" class="header-anchor">#</a> 2.2 Vue2 对 TypeScript 的支持非常有限</h2> <p>vue2 依赖于 this 上下文来往外暴露属性，但组件中的 this 比普通 JavaScript 对象多了很多“黑魔法”，没有考虑到 ts 的集成和类型推论等问题，所以在集成 ts 的过程中有很多的艰难险阻。</p> <p>在 vue3 中，这些 API 的集成大部分使用了普通的 JavaScript 对象和方法，所以一开始就是类型友好的，可以享受到类型推论功能等福利。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/Vue3/guide.html">
+        1. Vue3 基础
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.356218c2.js" defer></script><script src="/assets/js/2.1547bbba.js" defer></script><script src="/assets/js/16.33dc3160.js" defer></script>
+  </body>
+</html>
